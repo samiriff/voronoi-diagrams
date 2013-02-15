@@ -1,0 +1,254 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[12pt]{article} % use larger type; default would be 10pt
+
+%\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+ 
+
+
+
+
+%%% PAGE DIMENSIONS
+
+\usepackage{makeidx}
+\usepackage{hyperref}
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margins=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage[pdftex]{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+%\usepackage{booktabs} % for much better looking tables
+%\usepackage{array} % for better arrays (eg matrices) in maths
+%\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+%\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+
+%\usepackage{listings}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+%%% SECTION TITLE APPEARANCE
+%\usepackage{sectsty}
+%\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+%\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+%\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+%\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+%\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\begin{document}
+
+%\maketitle
+%\begin{titlepage}
+%
+%\begin{center}
+%
+%
+%% Upper part of the page
+%\includegraphics[scale=0.5]{RVCE.png}\\[1cm]    
+%
+%\textsc{\LARGE  RV College of Engineering}\\[1.5cm]
+%\small{Department of Computer Science}\\[1cm]
+%\textsc{\Large Network Programming Assignment}\\[0.5cm]
+%
+%
+%% Title
+%\HRule \\[0.4cm]
+%{  \huge\bfseries Syslog and Daemon Processes }\\[0.4cm]
+%
+%\HRule \\[3cm]
+%
+%% Author and supervisor
+%\begin{minipage}{0.8\textwidth}
+%\begin{flushleft} \large
+%\emph{By:}\\
+%Satvik \textsc{N} [1RV09CS095]\\
+%Satvik \textsc{N} [1RV09CS095]\\
+%Kushwanth Ram K S [1RV09CS124]\\
+%
+%\end{flushleft}
+%\end{minipage}
+%\vfill
+%
+%% Bottom of the page
+%{\large \today}
+%
+%\end{center}
+%
+%\end{titlepage}
+%
+%
+%
+%
+%
+%
+%
+%
+%\maketitle
+\setcounter{secnumdepth}{1}
+\section{Introduction}
+A Daemon process is process that runs in the background and is not associated with a controlling terminal. They are often started when the system is bootstrapped and terminate only when the system is shut down. UNIX systems have numerous daemons running in the background, performing different administrative tasks.
+
+Different ways to start a daemon:
+\begin{enumerate}
+\item{During the system startup, the System Initialization script can start various daemons.}
+\item{Many network servers like Telnet server, FTP server are started by the inetd superserver, which itself is started in step 1}
+\item{The execution of the programs on a regular basis is done by the cron daemon and all the programs that it invokes run as daemons.}
+\item{The execution of programs at one time in the future is specified by the at command. The cron daemon initiates this and all these programs are run as daemons.}
+	\item{Daemons can be started from the terminal, either in the foreground or in the background. This is done when testing the daemon or restarting the daemon.}
+\end{enumerate}
+\section{Characteristics and Properties of Voronoi diagrams}
+
+\begin{enumerate}
+\item{}
+\item{}
+\end{enumerate}
+
+
+
+%\begin{figure}[h]
+%  \centering
+%   \includegraphics[scale=0.35]{syslog.png}
+%  \caption{The BSD \textbf{syslog} facility}
+%\end{figure}
+
+
+\section{Algorithms}
+The GNU C library provides functions to submit messages to the Syslog facility:
+These functions only work to submit messages to the Syslog facility on the same system. To submit a message to the Syslog facility on another system, use the socket I/O functions to write a UDP datagram to the syslog UDP port on that system.
+%\begin{figure}[h]
+%  \centering
+%   \includegraphics[scale=0.5]{sys_func.png}
+%
+%\end{figure}
+
+\subsection{Incremental algorithm}
+
+\subsection{Divide and Conquer}
+      
+%\begin{figure}[h]
+%  \centering
+%   \includegraphics[scale=0.40]{options.png}
+%  \caption{The \textbf{option} argument for \textbf{openlog}}
+%\end{figure}
+
+\subsection{Fortunes Algorithm}
+
+
+%\begin{figure}[h]
+%  \centering
+%   \includegraphics[scale=0.45]{facility.png}
+%  \caption{The \textbf{facility} argument for \textbf{openlog}}
+%\end{figure}
+
+
+
+
+\subsection{Lloyd's algorithm}
+%\begin{figure}[]
+%  \centering
+%   \includegraphics[scale=0.35]{levels.png}
+%  \caption{The syslog levels (descending order)}
+%\end{figure}
+
+\section{Applications}
+\begin{enumerate}
+\item{}
+\item{}
+\end{enumerate}
+
+\begin{verbatim}
+openlog("lpd", LOG_PID ,  LOG_LPR);
+syslog(LOG_ERR, "open error for %s: %m", filename);
+\end{verbatim}
+
+
+
+Here,  the priority argument is specified as a combination of a level and a facility.
+In addition to syslog, many platforms provide a variant that handles variable argument lists.
+\begin{verbatim}
+#include <syslog.h>
+#include <stdarg.h>
+void vsyslog(int priority, const char *format, va_list arg);
+\end{verbatim}
+
+
+Most syslogd implementations will queue messages for a short time. If a duplicate message arrives during this time, the syslog daemon will not write it to the log. Instead, the daemon will print out a message similar to "last message repeated N times."
+
+\section{Syslog Example Program}
+Here is an example of openlog, syslog, and closelog:
+
+This example sets the logmask so that debug and informational messages get discarded without ever reaching Syslog. So the second syslog in the example does nothing.
+
+
+\begin{verbatim}
+// A basic example of the syslog function.
+#include <syslog.h>
+#include<stdio.h>
+#include<stdlib.h>
+int main(int argc, char **agrv)
+{
+	setlogmask (LOG_UPTO (LOG_NOTICE));
+	openlog ("exampleprog", LOG_CONS | LOG_PID | LOG_NDELAY, LOG_LOCAL1);
+	syslog (LOG_NOTICE, "Program started by User \%d", getuid ());
+	syslog (LOG_INFO, "This is a demo of syslog");
+	closelog ();
+	return 0;
+}
+\end{verbatim}
+
+\begin{thebibliography}{9}
+\bibitem{wiki}
+Syslog-
+  \emph{Wikipedia, the free Encyclopedia.}
+ \url{http://www.en.wikipedia.org/syslog}
+\bibitem{textbook}
+Stevens;W. Richard, Fenner; Bill, Rudoff; Andrew M. -
+\emph{UNIX Network Programming},
+Pearson Education,
+  3nd Edition,
+  2006.
+\bibitem{txt}
+Stevens;W. Richard , Rago;Stephen A -  
+\emph{Advanced Programming in UNIX System Environment.}
+Addison Wesley Professional,
+  2nd Edition,
+  2005.
+
+\bibitem{lin1}
+syslog.conf: Linux/Unix Command,\\
+\emph{http://linux.about.com/od/commands/l/blcmdl5\_syslogc.htm}.
+
+\bibitem{lin2}
+The GNU C Library - Syslog,\\
+\emph{http://www.linuxselfhelp.com/gnu/glibc/html\_chapter/libc\_18.html}
+
+\end{thebibliography}
+
+
+
+\end{document}
